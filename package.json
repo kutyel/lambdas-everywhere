@@ -1,0 +1,35 @@
+{
+  "name": "lambdas-everywhere",
+  "version": "1.0.0",
+  "description": "My talk for ReactAlicante 2018",
+  "main": "index.js",
+  "scripts": {
+    "start": "mdx-deck deck.mdx",
+    "build": "mdx-deck build deck.mdx",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kutyel/lambdas-everywhere.git"
+  },
+  "keywords": [
+    "mdx-deck",
+    "code-surfer",
+    "react",
+    "fp",
+    "recompose",
+    "lambdas",
+    "fantasy-land"
+  ],
+  "author": "kutyel <flaviocorpa@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kutyel/lambdas-everywhere/issues"
+  },
+  "homepage": "https://github.com/kutyel/lambdas-everywhere#readme",
+  "devDependencies": {
+    "mdx-deck": "^1.6.7",
+    "mdx-deck-code-surfer": "^0.1.2",
+    "raw-loader": "^0.5.1"
+  }
+}
