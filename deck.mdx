@@ -1,4 +1,5 @@
-import { CodeSurfer as Code } from "mdx-deck-code-surfer"
+import nightOwl from 'prism-react-renderer/themes/nightOwl'
+import { CodeSurfer as Code } from 'mdx-deck-code-surfer'
 export { future as theme } from 'mdx-deck/themes'
 
 # Lambdas, lambdas everywhere...
@@ -13,31 +14,30 @@ Let's see if this thing works...
 
 ```jsx
 <SomeCode />
-
 ```
 ---
 
 <Code
-  dark
-  title="before"
-  code={require("!raw-loader!./components/datepicker.js")}
+  theme={nightOwl}
+  title='before'
+  code={require('!raw-loader!./components/datepicker.js')}
   steps={[
-    { lines: [6], notes: "Note for the first step" },
+    { lines: [6], notes: 'Note for the first step' },
     { range: [5, 9] },
-    { tokens: { 9: [3, 4, 5] }, notes: "Note for the third step" }
+    { tokens: { 9: [3, 4, 5] }, notes: 'Note for the third step' }
   ]}
 />
 
 ---
 
 <Code
-  dark
-  title="after (recompose)"
-  code={require("!raw-loader!./components/recompose.js")}
+  theme={nightOwl}
+  title='after (recompose)'
+  code={require('!raw-loader!./components/recompose.js')}
   steps={[
-    { lines: [6], notes: "Note for the first step" },
+    { lines: [6], notes: 'Note for the first step' },
     { range: [5, 9] },
-    { tokens: { 9: [3, 4, 5] }, notes: "Note for the third step" }
+    { tokens: { 9: [3, 4, 5] }, notes: 'Note for the third step' }
   ]}
 />
 
