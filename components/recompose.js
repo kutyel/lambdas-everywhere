@@ -1,18 +1,18 @@
-import React from "react";
-import fmt from "date-fns/format";
-import { compose, withState } from "recompose";
+import React from 'react'
+import fmt from 'date-fns/format'
+import { compose, withState } from 'recompose'
 
-import Input from "./Input";
-import DatePicker from "./DatePicker";
+import Input from './Input'
+import DatePicker from './DatePicker'
 
-const END_DATE = "END_DATE";
-const START_DATE = "START_DATE";
-const format = d => (d ? fmt(d, "DD/MM/YYYY") : "");
+const END_DATE = 'END_DATE'
+const START_DATE = 'START_DATE'
+const format = d => (d ? fmt(d, 'DD/MM/YYYY') : '')
 const enhance = compose(
-  withState("focused", "onFocus", null),
-  withState("highlighted", "onHighlight", { from: null, to: null }),
-  withState("value", "onChange", { from: null, to: null })
-);
+  withState('focused', 'onFocus', null),
+  withState('highlighted', 'onHighlight', { from: null, to: null }),
+  withState('value', 'onChange', { from: null, to: null })
+)
 
 export default enhance(
   ({ focused, highlighted, onChange, onFocus, onHighlight, value }) => (
@@ -40,4 +40,4 @@ export default enhance(
       />
     </div>
   )
-);
+)
