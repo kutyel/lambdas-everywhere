@@ -7,7 +7,9 @@ import DatePicker from './DatePicker'
 
 const END_DATE = 'END_DATE'
 const START_DATE = 'START_DATE'
+
 const format = d => (d ? fmt(d, 'DD/MM/YYYY') : '')
+
 const enhance = compose(
   withState('focused', 'onFocus', null),
   withState('highlighted', 'onHighlight', { from: null, to: null }),
