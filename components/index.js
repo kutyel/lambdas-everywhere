@@ -1,2 +1,5 @@
 export { default as ReactLogo } from './react-logo'
+export { default as AirbnbLogo } from './airbnb-logo'
 export { default as BackgroundImage } from './background-image'
+export { default as ImperativeDatePicker } from './datepicker'
+export { default as FunctionalDatePicker } from './recompose'

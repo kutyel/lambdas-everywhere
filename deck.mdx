@@ -1,6 +1,6 @@
 import vsDarkPlus from 'prism-react-renderer/themes/vsDarkPlus'
 import { CodeSurfer as Code } from 'mdx-deck-code-surfer'
-import { ReactLogo, BackgroundImage } from './components'
+import { AirbnbLogo, ReactLogo, BackgroundImage, ImperativeDatePicker, FunctionalDatePicker } from './components'
 export { default as theme } from './theme'
 
 # Lambdas, lambdas everywhere...
@@ -49,6 +49,8 @@ export { default as theme } from './theme'
 
 ## Let's refactor Airbnb's calendar! 📅
 
+<ImperativeDatePicker />
+
 ---
 
 ## Some code?
@@ -71,6 +73,10 @@ export { default as theme } from './theme'
 
 ---
 
+> Welcome to `recompose`! 🤓🖖🏼
+
+---
+
 <Code
   theme={vsDarkPlus}
   title='after (recompose)'
@@ -84,6 +90,16 @@ export { default as theme } from './theme'
     { tokens: { 14: [9] }, notes: 'withState API: 3rd arg (defaultValue)' },
   ]}
 />
+
+---
+
+## Let's see if this thing still works...
+
+<FunctionalDatePicker />
+
+---
+
+# It does! 🎉🎉🎉
 
 ---
 

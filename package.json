@@ -32,5 +32,10 @@
     "mdx-deck": "^1.7.1",
     "mdx-deck-code-surfer": "^0.3.0",
     "raw-loader": "^0.5.1"
+  },
+  "dependencies": {
+    "date-fns": "^1.29.0",
+    "react-toolbox-core": "0.0.0-alpha.17",
+    "recompose": "^0.30.0"
   }
 }
