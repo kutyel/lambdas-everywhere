@@ -1,6 +1,6 @@
 import vsDarkPlus from 'prism-react-renderer/themes/vsDarkPlus'
 import { CodeSurfer as Code } from 'mdx-deck-code-surfer'
-import { ReactLogo, BackgroundImage } from './components'
+import { BackgroundImage, SpinLogo } from './components'
 export { default as theme } from './theme'
 
 # Lambdas, lambdas everywhere...
@@ -31,7 +31,7 @@ export { default as theme } from './theme'
 
 ---
 
-<ReactLogo src={require("file-loader!./img/react-logo.svg")}/>
+<SpinLogo src={require("file-loader!./img/react-logo.svg")}/>
 
 ## So... they say React is FUNCTIONAL
 
@@ -48,6 +48,8 @@ export { default as theme } from './theme'
 ---
 
 ## Let's refactor Airbnb's calendar! 📅
+
+<SpinLogo src={require("file-loader!./img/airbnb-logo.svg")}/>
 
 ---
 
@@ -71,6 +73,10 @@ export { default as theme } from './theme'
 
 ---
 
+> Welcome to `recompose`! 🤓🖖🏼
+
+---
+
 <Code
   theme={vsDarkPlus}
   title='after (recompose)'
@@ -84,6 +90,16 @@ export { default as theme } from './theme'
     { tokens: { 14: [9] }, notes: 'withState API: 3rd arg (defaultValue)' },
   ]}
 />
+
+---
+
+## Let's see if this thing still works...
+
+<SpinLogo src={require("file-loader!./img/airbnb-logo.svg")}/>
+
+---
+
+# It does! 🎉🎉🎉
 
 ---
 
