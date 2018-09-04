@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import DatePicker from './DatePicker'
+
 import Input from './Input'
+import DatePicker from './DatePicker'
 
 class PickerDemo extends Component {
   state = {
