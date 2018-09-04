@@ -30,7 +30,7 @@
   "devDependencies": {
     "file-loader": "^2.0.0",
     "mdx-deck": "^1.7.1",
-    "mdx-deck-code-surfer": "^0.3.0",
+    "mdx-deck-code-surfer": "^0.4.1",
     "raw-loader": "^0.5.1"
   }
 }
