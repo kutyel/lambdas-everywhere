@@ -51,25 +51,19 @@ export { default as theme } from './theme'
 
 ## Let's refactor Airbnb's calendar! 📅
 
-<SpinLogo src={require("file-loader!./images/airbnb-logo.svg")}/>
-
 ---
 
-## Some code?
+![imperative-datepicker](./images/imperative-datepicker.gif)
 
-```jsx
-<SomeCode />
-```
 ---
 
 <Code
+  title='before...'
   theme={vsDarkPlus}
-  title='before'
   code={require('!raw-loader!./components/datepicker.js')}
   steps={[
-    { lines: [6], notes: 'Note for the first step' },
-    { range: [5, 9] },
-    { tokens: { 9: [3, 4, 5] }, notes: 'Note for the third step' }
+    { lines: [6], notes: 'Pretty standard React code... 🙄' },
+    { range: [5, 11], notes: 'Good ol\' state 🍷' },
   ]}
 />
 
@@ -80,11 +74,10 @@ export { default as theme } from './theme'
 ---
 
 <Code
+  title='...after!'
   theme={vsDarkPlus}
-  title='after (recompose)'
   code={require('!raw-loader!./components/recompose.js')}
   steps={[
-    { lines: [6], notes: 'Note for the first step' },
     { range: [5, 9] },
     { lines: [14], notes: 'What is this magic? ✨' },
     { tokens: { 14: [3] }, notes: 'withState API: 1st arg (state)' },
@@ -97,7 +90,9 @@ export { default as theme } from './theme'
 
 ## Let's see if this thing still works...
 
-<SpinLogo src={require("file-loader!./images/airbnb-logo.svg")}/>
+---
+
+![functional-datepicker](./images/functional-datepicker.gif)
 
 ---
 
