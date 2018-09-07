@@ -4,7 +4,8 @@ export default {
   ...theme,
   monospace: 'Dank Mono',
   colors: {
-    text: '#d4d4d4',
-    background: '#1e1e1e'
+    text: 'rgb(214, 222, 235)',
+    code: 'rgb(130, 170, 255)',
+    background: 'rgb(1, 22, 39)'
   }
 }

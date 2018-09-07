@@ -12,8 +12,8 @@ const CounterReducer = (state = 0, action) =>
     Nothing: () => state
   })
 
-CounterReducer(4, { type: INC }) // => 5
-CounterReducer(null, { type: INC }) // => 1
-CounterReducer(4, { type: DEC }) // => 3
-CounterReducer(null, { type: DEC }) // => -1
-CounterReducer(4, { type: INC_BY, payload: 3 }) // => 7
+CounterReducer(4, { type: 'INC' }) // => 5
+CounterReducer(null, { type: 'INC' }) // => 1
+CounterReducer(4, { type: 'DEC' }) // => 3
+CounterReducer(null, { type: 'DEC' }) // => -1
+CounterReducer(4, { type: 'INC_BY', payload: 3 }) // => 7
