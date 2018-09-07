@@ -1,6 +1,6 @@
 import vsDarkPlus from 'prism-react-renderer/themes/vsDarkPlus'
 import { CodeSurfer as Code } from 'mdx-deck-code-surfer'
-import { BackgroundImage, SpinLogo } from './components'
+import { BackgroundImage, Counter, SpinLogo } from './components'
 export { default as theme } from './theme'
 
 <BackgroundImage src={require("file-loader!./images/first-slide.jpeg")} />
@@ -109,22 +109,42 @@ export { default as theme } from './theme'
 ---
 
 <Code
-  title='folktale/maybe'
+  title='folktale/maybe 🌈🦄'
   theme={vsDarkPlus}
   code={require('!raw-loader!./components/maybe.js')}
   steps={[
     { lines: [1], notes: 'This is where Fantasy Land comes in 🌈' },
-    { range: [3, 5], notes: 'action types (strings)' },
-    { range: [7, 9], notes: 'actual actions (functions)' },
-    { range: [11, 15], notes: 'our redux handlers (type -> action)' },
-    { range: [17, 21], notes: 'our _ONLY_ reducer 😎' },
-    { range: [23, 27], notes: 'it works! 👏' },
+    { range: [3, 5], notes: 'actions ⚙️' },
+    { lines: [7], notes: 'handlers 👋' },
+    { range: [9, 13], notes: 'our *only* reducer 😎' },
+    { range: [15, 19], notes: 'it works! 👏' },
+  ]}
+/>
+
+---
+
+<Code
+  title='crocks 🐊'
+  theme={vsDarkPlus}
+  code={require('!raw-loader!./components/crocks.js')}
+  steps={[
+    { lines: [1], notes: 'You might want to give crocks a try 😉' },
+    { range: [3, 5], notes: 'same actions ⚙️' },
+    { lines: [7], notes: 'same handlers 👋' },
+    { range: [9, 11], notes: 'safe() returns a Maybe 🤔' },
+    { range: [13, 17], notes: 'this also works! 👏🏼' },
   ]}
 />
 
 ---
 
 ### Does that _actually_ work???
+
+<Counter />
+
+---
+
+# THANKS! ☺️
 
 ---
 
