@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "mdx-deck deck.mdx",
-    "build": "mdx-deck build deck.mdx",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "mdx-deck build deck.mdx"
   },
   "repository": {
     "type": "git",
@@ -23,14 +22,22 @@
   ],
   "author": "kutyel <flaviocorpa@gmail.com>",
   "license": "MIT",
+  "now": {
+    "alias": "lambdas-everywhere"
+  },
   "bugs": {
     "url": "https://github.com/kutyel/lambdas-everywhere/issues"
   },
   "homepage": "https://github.com/kutyel/lambdas-everywhere#readme",
   "devDependencies": {
     "file-loader": "^2.0.0",
-    "mdx-deck": "^1.7.1",
-    "mdx-deck-code-surfer": "^0.4.1",
+    "mdx-deck": "^1.7.3",
     "raw-loader": "^0.5.1"
+  },
+  "dependencies": {
+    "mdx-deck-code-surfer": "^0.4.1",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "styled-components": "^3.4.5"
   }
 }
