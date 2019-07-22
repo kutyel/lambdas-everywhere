@@ -31,7 +31,8 @@
   "homepage": "https://github.com/kutyel/lambdas-everywhere#readme",
   "devDependencies": {
     "file-loader": "^2.0.0",
-    "js-yaml": ">=3.13.1",
+    "js-yaml": "^3.13.1",
+    "lodash": "^4.17.13",
     "mdx-deck": "^1.7.3",
     "mdx-deck-code-surfer": "^0.4.1",
     "raw-loader": "^0.5.1"
